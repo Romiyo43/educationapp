@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/appname"
+        android:layout_width="448dp"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUserId"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/app_name"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="98dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUserId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/appname"
+        app:layout_constraintVertical_bias="0.733"
+        app:srcCompat="@drawable/app_logo"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextUserId"
+        android:layout_width="379dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="100dp"
+        android:drawableStart="@drawable/ic_outline_school_24"
+        android:drawablePadding="10sp"
+        android:hint="School Code"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="220dp"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="245dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="102dp"
+        android:text=""
+        android:textColor="@android:color/holo_red_light"
+
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextUserId"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
